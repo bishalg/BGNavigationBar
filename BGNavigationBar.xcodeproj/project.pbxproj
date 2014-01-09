@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		052FCFD5187EF71900499880 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 052FCFD4187EF71900499880 /* back.png */; };
 		05A8E54D187E28AB002DAA7C /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8E546187E28AB002DAA7C /* UIColor+HexColor.m */; };
 		05A8E54E187E28AB002DAA7C /* UIColor+SmokeFree.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8E548187E28AB002DAA7C /* UIColor+SmokeFree.m */; };
 		05A8E54F187E28AB002DAA7C /* UIImage+MaskedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8E54A187E28AB002DAA7C /* UIImage+MaskedImage.m */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		052FCFD4187EF71900499880 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		05A8E545187E28AB002DAA7C /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
 		05A8E546187E28AB002DAA7C /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
 		05A8E547187E28AB002DAA7C /* UIColor+SmokeFree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SmokeFree.h"; sourceTree = "<group>"; };
@@ -95,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		052FCFD3187EF71900499880 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				052FCFD4187EF71900499880 /* back.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		05A8E544187E28AB002DAA7C /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +153,7 @@
 		05CEC67D187CF4640011D318 /* BGNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
+				052FCFD3187EF71900499880 /* Images */,
 				05A8E544187E28AB002DAA7C /* Categories */,
 				05CEC6AD187CF6C10011D318 /* View */,
 				05CEC6A9187CF57C0011D318 /* ViewController */,
@@ -281,6 +292,7 @@
 			files = (
 				05CEC682187CF4640011D318 /* InfoPlist.strings in Resources */,
 				05CEC68A187CF4640011D318 /* Images.xcassets in Resources */,
+				052FCFD5187EF71900499880 /* back.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

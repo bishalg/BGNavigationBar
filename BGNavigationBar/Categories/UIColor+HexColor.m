@@ -46,19 +46,18 @@
 
 }
 
-
  // Create a color using a string with a webcolor
  // ex. [UIColor colorWithHexString:@"#03047F"]
-//+ (UIColor *) colorWithHexString:(NSString *)hexString {
-//    NSScanner *scanner;
-//    unsigned int rgbval;
-//    
-//    scanner = [NSScanner scannerWithString: hexString];
-//    [scanner setCharactersToBeSkipped:[NSCharacterSet characterSetWithCharactersInString:@"#"]];
-//    [scanner scanHexInt: &rgbval];
-//    
-//    return [UIColor colorWithHexValue:rgbval];
-//}
++ (UIColor *)hexString:(NSString *)hexString {
+    NSScanner *scanner;
+    unsigned int rgbval;
+    
+    scanner = [NSScanner scannerWithString: hexString];
+    [scanner setCharactersToBeSkipped:[NSCharacterSet characterSetWithCharactersInString:@"#"]];
+    [scanner scanHexInt: &rgbval];
+    
+    return [UIColor colorWithHexValue:rgbval];
+}
 
 // Create a color using a hex RGB value
 // ex. [UIColor colorWithHexValue: 0x03047F]

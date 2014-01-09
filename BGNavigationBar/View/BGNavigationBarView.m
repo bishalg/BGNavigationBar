@@ -43,7 +43,7 @@
     }
 }
 
-- (void)buttonRightAction:(UIButton *) sender {
+- (void)buttonRightAction:(UIButton *)sender {
     if (isDynamic) {
         if (isAlterRightButton) {
             if (isRightToggle) {
@@ -60,8 +60,9 @@
     }
 }
 
-- (void)buttonExtraAction:(UIButton *) sender{
+- (void)buttonExtraAction:(UIButton *)sender{
     if (isAlterExtraButton) {
+        
     }
 }
 
@@ -79,30 +80,31 @@
     [labelTitle sizeToFit];
     CGFloat textWidth = labelTitle.frame.size.width;
     labelTitle.frame = CGRectMake(width / 2 - textWidth / 2, height - 35, 160, 25);
-    labelTitle.textColor=[UIColor colorWithRed:(115.0/255.0) green:(52.0/255.0) blue:(0.0/255.0) alpha:1.0];
+    labelTitle.textColor = [UIColor yellowColor];
+    // [UIColor colorWithRed:(115.0/255.0) green:(52.0/255.0) blue:(0.0/255.0) alpha:1.0];
     labelTitle.shadowColor = [UIColor colorWithRed:230.0/255.0 green:156.0/255.0 blue:0.0/255.0 alpha:1.0];
     labelTitle.shadowOffset = CGSizeMake(0.0, 1.0);
 
-    
     [labelTitle sizeToFit];
     return labelTitle;
 }
 
 - (void)baseInit {
     height = self.bounds.size.height;
-    isDynamic=YES;
+    isDynamic = YES;
     UIView *barBGView = [[UIView alloc] initWithFrame:self.bounds];
+    // barBGView.backgroundColor = [UIColor yellowColor];
     
-    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
-        //DLog(@"< iOS6");
-        UIImage *barBGImage = [[UIImage imageNamed:@"action_bar_bg"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 6, 0, 6)];
-        [barBGView setBackgroundColor:[UIColor colorWithPatternImage:barBGImage]];
-    }
-    else {
-        //DLog(@"iOS7");
-        UIImage *barBGImage = [[UIImage imageNamed:@"action_bar_bg7"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 6, 0, 6)];
-        [barBGView setBackgroundColor:[UIColor colorWithPatternImage:barBGImage]];
-    }
+//    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
+//        //DLog(@"< iOS6");
+//        UIImage *barBGImage = [[UIImage imageNamed:@"action_bar_bg"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 6, 0, 6)];
+//        [barBGView setBackgroundColor:[UIColor colorWithPatternImage:barBGImage]];
+//    }
+//    else {
+//        //DLog(@"iOS7");
+//        UIImage *barBGImage = [[UIImage imageNamed:@"action_bar_bg7"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 6, 0, 6)];
+//        [barBGView setBackgroundColor:[UIColor colorWithPatternImage:barBGImage]];
+//    }
     
     /* UIEdgeInsetsMake ( TOP , LEFT, BOTTOM. RIGHT ) */
     UILabel *labelTitle = [self titleLabel];
@@ -112,7 +114,7 @@
     UIButton *leftButton = [[UIButton alloc] init];
     switch (buttonLeftType) {
         case UIButtonNavBarLeftTypeBack:
-            [leftButton setImage:[UIImage imageNamed:@"ic_action_back"] forState:UIControlStateNormal];
+            [leftButton setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
             break;
         case UIButtonNavBarLeftTypeSideMenu:
             [leftButton setImage:[UIImage imageNamed:@"ic_sandwich"] forState:UIControlStateNormal];
@@ -127,8 +129,8 @@
                    action:@selector(buttonLeftAction:)
          forControlEvents:UIControlEventTouchUpInside];
     leftButton.tag = buttonLeftType;
-    leftButton.frame = CGRectMake(5, height - 44, 40, 40);
-    leftButton.backgroundColor = [UIColor redColor];
+    leftButton.frame = CGRectMake(5, height - 35, 25, 25);
+    // leftButton.backgroundColor = [UIColor redColor];
     if (buttonLeftType != -1) {
         [barBGView addSubview:leftButton];
     }
@@ -202,8 +204,6 @@
         case UIButtonNavBarExtraTypeSearch:
             [extraButton setImage:[UIImage imageNamed:@"ic_action_search"] forState:UIControlStateNormal];
             break;
-            
-            
         default:
             break;
     }
@@ -218,24 +218,18 @@
         [barBGView addSubview:extraButton];
     }
     
-    CGRect newFrame=labelTitle.frame;
-    newFrame.origin.x=leftButton.frame.origin.x+leftButton.frame.size.width;
-    newFrame.size.width=self.frame.size.width-2*(leftButton.frame.origin.x+leftButton.frame.size.width);
+    CGRect newFrame     = labelTitle.frame;
+    newFrame.origin.x   = leftButton.frame.origin.x + leftButton.frame.size.width;
+    newFrame.size.width = self.frame.size.width - 2 * (leftButton.frame.origin.x + leftButton.frame.size.width);
     
-    
-   // DLog(@"L: %d, R: %d, E: %d, EN: %d",buttonLeftType,buttonRightType,buttonExtraType,buttonExtraNextType);
-    if (buttonRightType!=-1) {
-        newFrame.size.width=self.frame.size.width-2*(leftButton.frame.size.width+leftButton.frame.origin.x);
+    if (buttonRightType != -1) {
+        newFrame.size.width = self.frame.size.width - 2 * (leftButton.frame.size.width + leftButton.frame.origin.x);
     }
-    if(buttonExtraType!=-1){
-        newFrame.size.width=extraButton.frame.origin.x-leftButton.frame.origin.x-leftButton.frame.size.width;
+    if (buttonExtraType != -1) {
+        newFrame.size.width = extraButton.frame.origin.x - leftButton.frame.origin.x - leftButton.frame.size.width;
     }
-//    if (buttonExtraNextType!=-1){
-//        newFrame.size.width=extraNextButton.frame.origin.x-leftButton.frame.origin.x-leftButton.frame.size.width;
-//    }
-    labelTitle.frame=newFrame;
-    /*************************/
-    
+
+    labelTitle.frame = newFrame;
     [self addSubview:barBGView];
 }
 
@@ -252,6 +246,8 @@
 }
 
 - (void)drawRect:(CGRect)rect {
+    [self setClipsToBounds:YES];
+
     [self baseInit];
 }
 
