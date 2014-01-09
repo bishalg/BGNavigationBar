@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05A8E54D187E28AB002DAA7C /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8E546187E28AB002DAA7C /* UIColor+HexColor.m */; };
+		05A8E54E187E28AB002DAA7C /* UIColor+SmokeFree.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8E548187E28AB002DAA7C /* UIColor+SmokeFree.m */; };
+		05A8E54F187E28AB002DAA7C /* UIImage+MaskedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8E54A187E28AB002DAA7C /* UIImage+MaskedImage.m */; };
+		05A8E550187E28AB002DAA7C /* UIView+position.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8E54C187E28AB002DAA7C /* UIView+position.m */; };
 		05CEC678187CF4640011D318 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CEC677187CF4640011D318 /* Foundation.framework */; };
 		05CEC67A187CF4640011D318 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CEC679187CF4640011D318 /* CoreGraphics.framework */; };
 		05CEC67C187CF4640011D318 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CEC67B187CF4640011D318 /* UIKit.framework */; };
@@ -22,7 +26,6 @@
 		05CEC6AC187CF57C0011D318 /* BGMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEC6AB187CF57C0011D318 /* BGMainViewController.m */; };
 		05CEC6B0187CF6C10011D318 /* BGNavigationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEC6AF187CF6C10011D318 /* BGNavigationBarView.m */; };
 		05CEC6B3187CF70F0011D318 /* BGConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEC6B2187CF70F0011D318 /* BGConstants.m */; };
-		05CEC6BA187CF9490011D318 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEC6B9187CF9490011D318 /* UIColor+HexColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05A8E545187E28AB002DAA7C /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
+		05A8E546187E28AB002DAA7C /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
+		05A8E547187E28AB002DAA7C /* UIColor+SmokeFree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SmokeFree.h"; sourceTree = "<group>"; };
+		05A8E548187E28AB002DAA7C /* UIColor+SmokeFree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SmokeFree.m"; sourceTree = "<group>"; };
+		05A8E549187E28AB002DAA7C /* UIImage+MaskedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MaskedImage.h"; sourceTree = "<group>"; };
+		05A8E54A187E28AB002DAA7C /* UIImage+MaskedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MaskedImage.m"; sourceTree = "<group>"; };
+		05A8E54B187E28AB002DAA7C /* UIView+position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+position.h"; sourceTree = "<group>"; };
+		05A8E54C187E28AB002DAA7C /* UIView+position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+position.m"; sourceTree = "<group>"; };
 		05CEC674187CF4640011D318 /* BGNavigationBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BGNavigationBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05CEC677187CF4640011D318 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		05CEC679187CF4640011D318 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,8 +69,6 @@
 		05CEC6AF187CF6C10011D318 /* BGNavigationBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGNavigationBarView.m; sourceTree = "<group>"; };
 		05CEC6B1187CF70F0011D318 /* BGConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGConstants.h; sourceTree = "<group>"; };
 		05CEC6B2187CF70F0011D318 /* BGConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGConstants.m; sourceTree = "<group>"; };
-		05CEC6B8187CF9490011D318 /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
-		05CEC6B9187CF9490011D318 /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +95,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05A8E544187E28AB002DAA7C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				05A8E545187E28AB002DAA7C /* UIColor+HexColor.h */,
+				05A8E546187E28AB002DAA7C /* UIColor+HexColor.m */,
+				05A8E547187E28AB002DAA7C /* UIColor+SmokeFree.h */,
+				05A8E548187E28AB002DAA7C /* UIColor+SmokeFree.m */,
+				05A8E549187E28AB002DAA7C /* UIImage+MaskedImage.h */,
+				05A8E54A187E28AB002DAA7C /* UIImage+MaskedImage.m */,
+				05A8E54B187E28AB002DAA7C /* UIView+position.h */,
+				05A8E54C187E28AB002DAA7C /* UIView+position.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		05CEC66B187CF4640011D318 = {
 			isa = PBXGroup;
 			children = (
@@ -119,7 +143,7 @@
 		05CEC67D187CF4640011D318 /* BGNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
-				05CEC6B4187CF9030011D318 /* Category */,
+				05A8E544187E28AB002DAA7C /* Categories */,
 				05CEC6AD187CF6C10011D318 /* View */,
 				05CEC6A9187CF57C0011D318 /* ViewController */,
 				05CEC67E187CF4640011D318 /* Supporting Files */,
@@ -177,15 +201,6 @@
 				05CEC6AF187CF6C10011D318 /* BGNavigationBarView.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		05CEC6B4187CF9030011D318 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				05CEC6B8187CF9490011D318 /* UIColor+HexColor.h */,
-				05CEC6B9187CF9490011D318 /* UIColor+HexColor.m */,
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,9 +302,12 @@
 				05CEC6AC187CF57C0011D318 /* BGMainViewController.m in Sources */,
 				05CEC6B0187CF6C10011D318 /* BGNavigationBarView.m in Sources */,
 				05CEC684187CF4640011D318 /* main.m in Sources */,
+				05A8E54E187E28AB002DAA7C /* UIColor+SmokeFree.m in Sources */,
+				05A8E54F187E28AB002DAA7C /* UIImage+MaskedImage.m in Sources */,
+				05A8E550187E28AB002DAA7C /* UIView+position.m in Sources */,
 				05CEC6B3187CF70F0011D318 /* BGConstants.m in Sources */,
 				05CEC688187CF4640011D318 /* BGAppDelegate.m in Sources */,
-				05CEC6BA187CF9490011D318 /* UIColor+HexColor.m in Sources */,
+				05A8E54D187E28AB002DAA7C /* UIColor+HexColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +512,7 @@
 				05CEC6A2187CF4640011D318 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05CEC6A3187CF4640011D318 /* Build configuration list for PBXNativeTarget "BGNavigationBarTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +521,7 @@
 				05CEC6A5187CF4640011D318 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
