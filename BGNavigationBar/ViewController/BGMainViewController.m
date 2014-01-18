@@ -47,7 +47,7 @@
 @synthesize isNavBarToShow;
 
 - (void)bgNavigationBarButtonLocation:(NSUInteger)buttonLocation ofButtonType:(NSUInteger)buttonType {
-
+    DLog(@"%lu", (unsigned long)buttonLocation);
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
@@ -86,7 +86,7 @@
     // [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     
     UILabel *labelOne       = [[UILabel alloc]initWithFrame:CGRectMake(30, 15, 140, 20)];
-    labelOne.textAlignment  = ALIGN_LEFT;
+    labelOne.textAlignment  = NSTextAlignmentLeft;
     labelOne.text           = [NSString stringWithFormat:@"Row No %d", (int)indexPath.row ];
     [labelOne setBackgroundColor:[UIColor clearColor]];
     [labelOne setTextColor:[UIColor colorWithRed:0.000 green:0.502 blue:1.000 alpha:1.000]];

@@ -31,9 +31,7 @@
 @class BGNavigationBarView;
 
 @protocol BGNavigationBarViewDelegate <NSObject>
-@required
 - (void)bgNavigationBarButtonLocation:(NSUInteger)buttonLocation ofButtonType:(NSUInteger)buttonType;
-@optional
 @end
 
 @interface BGNavigationBarView : UIView

@@ -99,7 +99,7 @@
 
 
 - (void)buttonLeftAction:(UIButton *)sender{
-    if (DELEGATE_OK(bgNavigationBarButtonLocation:ofButtonType:)) {
+    if ([self.delegate respondsToSelector:@selector(bgNavigationBarButtonLocation:ofButtonType:)]) {
         [delegate bgNavigationBarButtonLocation:UIButtonNavBarLocationLeft ofButtonType:sender.tag];
     }
 }
@@ -115,7 +115,7 @@
             }
             isRightToggle = !isRightToggle;
         }
-        if (DELEGATE_OK(bgNavigationBarButtonLocation:ofButtonType:)) {
+        if ([self.delegate respondsToSelector:@selector(bgNavigationBarButtonLocation:ofButtonType:) ]) {
             [delegate bgNavigationBarButtonLocation:UIButtonNavBarLocationRight ofButtonType:sender.tag];
         }
     }
@@ -135,7 +135,7 @@
     labelTitle.textColor        = [UIColor whiteColor];
     labelTitle.backgroundColor  = [UIColor clearColor];
     labelTitle.font             = [UIFont fontWithName:@"Helvetica-Bold" size:16.0];
-    labelTitle.textAlignment    = ALIGN_CENTER;
+    labelTitle.textAlignment    = NSTextAlignmentCenter;
     labelTitle.text             = self.title;
     [labelTitle sizeToFit];
     
