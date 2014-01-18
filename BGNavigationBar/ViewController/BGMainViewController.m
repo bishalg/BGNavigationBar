@@ -77,7 +77,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 55;
+    return 99;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -86,10 +86,10 @@
     // [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     
     UILabel *labelOne       = [[UILabel alloc]initWithFrame:CGRectMake(30, 15, 140, 20)];
+    labelOne.textAlignment  = ALIGN_LEFT;
+    labelOne.text           = [NSString stringWithFormat:@"Row No %d", (int)indexPath.row ];
     [labelOne setBackgroundColor:[UIColor clearColor]];
     [labelOne setTextColor:[UIColor colorWithRed:0.000 green:0.502 blue:1.000 alpha:1.000]];
-    labelOne.textAlignment  = ALIGN_LEFT;
-    labelOne.text           = [NSString stringWithFormat:@"Row No %d", indexPath.row ];
     [cell.contentView addSubview:labelOne];
     return cell;
 }
@@ -102,7 +102,6 @@
     aTableView.bounces      = NO;
     aTableView.contentInset = UIEdgeInsetsMake(navBarHt, 0, 0, 0);
     [aTableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
-        
     [aTableView setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:aTableView];
 }
@@ -120,10 +119,11 @@
     bgNavigationBarView.buttonRightType = -1; //// Hide Right Button
     //bgNavigationBarView.isAlterRightButton=YES;
     bgNavigationBarView.buttonExtraType = -1; // Hide Extra Button
-    bgNavigationBarView.backgroundColor = [UIColor colorWithWhite:0.902 alpha:1.000];
+    bgNavigationBarView.backgroundColor = [UIColor colorWithRed:0.400 green:0.800 blue:1.000 alpha:1.000];
     bgNavigationBarView.title           = @"BG Navigation Bar";
     bgNavigationBarView.alpha           = 0.95;
     bgNavigationBarView.layer.zPosition = 100;
+    bgNavigationBarView.tintColor       = [UIColor colorWithRed:0.400 green:0.800 blue:1.000 alpha:1.000];
     [self.view  addSubview:bgNavigationBarView];
 }
 

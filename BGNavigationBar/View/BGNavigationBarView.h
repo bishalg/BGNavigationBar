@@ -81,29 +81,32 @@ typedef NS_ENUM(NSInteger, UIButtonNavBarExtra) {
 @property (nonatomic) int buttonRightType;
 @property (nonatomic) int buttonExtraType;
 
+
+@property (nonatomic, strong)   UIColor     *blurTintColor;
+
 @property (nonatomic, strong)   NSString    *title;
 @property (nonatomic, strong)   UIButton    *rightButton;
 
 /**
  Custom Text For Buttons
  */
-@property (nonatomic, strong) NSString *buttonLeftCustomText;
-@property (nonatomic, strong) NSString *buttonRightCustomText;
-@property (nonatomic, strong) NSString *buttonExtraCustomText;
+@property (nonatomic, strong)   NSString    *buttonLeftCustomText;
+@property (nonatomic, strong)   NSString    *buttonRightCustomText;
+@property (nonatomic, strong)   NSString    *buttonExtraCustomText;
 
 /**
  Custom Images For Buttons
  */
-@property (nonatomic, strong) NSString *leftCustomImage;
-@property (nonatomic, strong) NSString *rightCustomImage;
-@property (nonatomic, strong) NSString *extraCustomImage;
+@property (nonatomic, strong)   NSString    *leftCustomImage;
+@property (nonatomic, strong)   NSString    *rightCustomImage;
+@property (nonatomic, strong)   NSString    *extraCustomImage;
 
 
 // Flag for button of alternating type which changes in click event
-@property (nonatomic, assign) BOOL isAlterRightButton;
-@property (nonatomic, assign) BOOL isAlterLeftButton;
-@property (nonatomic, assign) BOOL isAlterExtraButton;
-@property (nonatomic, assign) BOOL isDynamic;
+@property (nonatomic, assign)   BOOL        isAlterRightButton;
+@property (nonatomic, assign)   BOOL        isAlterLeftButton;
+@property (nonatomic, assign)   BOOL        isAlterExtraButton;
+@property (nonatomic, assign)   BOOL        isDynamic;
 
 
 /* Delegate */

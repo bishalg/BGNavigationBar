@@ -36,13 +36,15 @@
  */
 
 #import "BGNavigationBarView.h"
+#import <QuartzCore/QuartzCore.h>
+
 
 @interface BGNavigationBarView ()
 
 @property (nonatomic)           CGFloat     height;
 @property (nonatomic)           BOOL        isRightToggle;
-@property (nonatomic, strong) UIToolbar *toolbar;
-@property (nonatomic, strong) UILabel *labelTitle;
+@property (nonatomic, strong)   UIToolbar   *toolbar;
+@property (nonatomic, strong)   UILabel     *labelTitle;
 
 @end
 
@@ -126,21 +128,22 @@
 }
 
 - (UILabel *)titleLabel {
-    CGFloat width = self.bounds.size.width;
-    UILabel *labelTitle = [[UILabel alloc] init];
-    labelTitle.frame = CGRectMake(width / 2 - 100 / 2, height - 35, 100, 25);
-    labelTitle.font = [UIFont systemFontOfSize:18];
-    labelTitle.textColor  = [UIColor whiteColor];
-    labelTitle.backgroundColor = [UIColor clearColor];
-    labelTitle.font=[UIFont fontWithName:@"Helvetica-Bold" size:16.0];
-    labelTitle.textAlignment = ALIGN_CENTER;
-    labelTitle.text = self.title;
+    CGFloat width               = self.bounds.size.width;
+    UILabel *labelTitle         = [[UILabel alloc] init];
+    labelTitle.frame            = CGRectMake(width / 2 - 100 / 2, height - 35, 100, 25);
+    labelTitle.font             = [UIFont systemFontOfSize:18];
+    labelTitle.textColor        = [UIColor whiteColor];
+    labelTitle.backgroundColor  = [UIColor clearColor];
+    labelTitle.font             = [UIFont fontWithName:@"Helvetica-Bold" size:16.0];
+    labelTitle.textAlignment    = ALIGN_CENTER;
+    labelTitle.text             = self.title;
     [labelTitle sizeToFit];
-    CGFloat textWidth = labelTitle.frame.size.width;
-    labelTitle.frame = CGRectMake(width / 2 - textWidth / 2, height - 35, 160, 25);
-    labelTitle.textColor = [UIColor colorWithWhite:0.298 alpha:1.000];
-    labelTitle.shadowColor = [UIColor colorWithWhite:0.902 alpha:1.000];
-    labelTitle.shadowOffset = CGSizeMake(0.0, 1.0);
+    
+    CGFloat textWidth           = labelTitle.frame.size.width;
+    labelTitle.frame            = CGRectMake(width / 2 - textWidth / 2, height - 35, 160, 25);
+    labelTitle.textColor        = [UIColor colorWithWhite:0.298 alpha:1.000];
+    labelTitle.shadowColor      = [UIColor colorWithWhite:0.902 alpha:1.000];
+    labelTitle.shadowOffset     = CGSizeMake(0.0, 1.0);
 
     [labelTitle sizeToFit];
     return labelTitle;
@@ -153,6 +156,8 @@
 //        [self.layer insertSublayer:[self.toolbar layer] atIndex:0];
 //    }
     
+    self.toolbar                = [[UIToolbar alloc] initWithFrame:self.bounds];
+    UIView      *barBGView      = [[UIView alloc] initWithFrame:self.bounds];
     if ([self isiOSVerGreaterThen7]) {
         height = 66;
     } else {
@@ -162,7 +167,7 @@
     
     height = self.bounds.size.height;
     isDynamic = YES;
-    UIView *barBGView = [[UIView alloc] initWithFrame:self.bounds];
+//    UIView *barBGView = [[UIView alloc] initWithFrame:self.bounds];
     
 //    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
 //        //DLog(@"< iOS6");
@@ -180,7 +185,6 @@
     /* Title */
     self.labelTitle = [self titleLabel];
     self.labelTitle.text = self.title;
-    [barBGView addSubview:self.labelTitle];
     
     /*       Left Button        */
     UIButton *leftButton = [[UIButton alloc] init];
@@ -203,9 +207,6 @@
     leftButton.tag = buttonLeftType;
     leftButton.frame = CGRectMake(5, height - 35, 25, 25);
     // leftButton.backgroundColor = [UIColor redColor];
-    if (buttonLeftType != -1) {
-        [barBGView addSubview:leftButton];
-    }
     
     /*       Right Button       */
     if (buttonRightType == UIButtonNavBarRightTypeEdit) {
@@ -221,10 +222,6 @@
         rightButton = [[UIButton alloc] init];
         rightButton.frame = CGRectMake(275, height - 44, 40, 40);
         rightButton.backgroundColor = [UIColor clearColor];
-    }
-    
-    if (buttonRightType != -1) {
-        [barBGView addSubview:rightButton];
     }
     
     switch (buttonRightType) {
@@ -257,9 +254,7 @@
                     action:@selector(buttonRightAction:)
           forControlEvents:UIControlEventTouchUpInside];
     rightButton.tag = buttonRightType;
-    if (buttonRightType != -1) {
-        [barBGView addSubview:rightButton];
-    }
+    
     
     /*       Extra Buttons       */
     UIButton *extraButton  = [[UIButton alloc] init];
@@ -278,11 +273,6 @@
           forControlEvents:UIControlEventTouchUpInside];
     extraButton.tag = buttonExtraType;
     
-    if (buttonExtraType != -1) {
-        extraButton.frame = CGRectMake(230, height - 44, 40, 40);
-        extraButton.backgroundColor  = [UIColor clearColor];
-        [barBGView addSubview:extraButton];
-    }
     
     CGRect newFrame     = self.labelTitle.frame;
     newFrame.origin.x   = leftButton.frame.origin.x + leftButton.frame.size.width;
@@ -294,21 +284,45 @@
     if (buttonExtraType != -1) {
         newFrame.size.width = extraButton.frame.origin.x - leftButton.frame.origin.x - leftButton.frame.size.width;
     }
-
     self.labelTitle.frame = newFrame;
-    [self addSubview:barBGView];
+    extraButton.frame = CGRectMake(230, height - 44, 40, 40);
+    extraButton.backgroundColor  = [UIColor clearColor];
+    
+    if ([self isiOSVerGreaterThen7]) {
+        [self setToolbar:[[UIToolbar alloc] initWithFrame:[self bounds]]];
+        self.toolbar.translucent =  YES;
+        [self.toolbar setBarTintColor:self.blurTintColor];
+        [self.layer insertSublayer:[self.toolbar layer] atIndex:0];
+        [self.toolbar addSubview:self.labelTitle];
+        if (buttonLeftType  != -1)  [self.toolbar addSubview:leftButton];
+        if (buttonRightType != -1) [self.toolbar addSubview:rightButton];
+        if (buttonExtraType != -1) [self.toolbar addSubview:extraButton];
+        
+        [self addSubview:self.toolbar];
+    } else {
+        [barBGView addSubview:self.labelTitle];
+        if (buttonLeftType  != -1) [barBGView addSubview:leftButton];
+        if (buttonRightType != -1) [barBGView addSubview:rightButton];
+        if (buttonExtraType != -1) [barBGView addSubview:extraButton];
+        
+        [self addSubview:barBGView];
+    }
 }
 
 - (UIButton *)textButtonWithTitle:(NSString *)title {
-    UIButton *textButton = [[UIButton alloc] init];
-    textButton.frame = CGRectMake(240, height - 40, 60, 40);
+    UIButton *textButton                    = [[UIButton alloc] init];
+    textButton.frame                        = CGRectMake(240, height - 40, 60, 40);
+    textButton.titleLabel.font              = [UIFont fontWithName:@"Helvetica-Bold" size:16.0];
+    textButton.contentHorizontalAlignment   = UIControlContentHorizontalAlignmentRight;
     [textButton setTitle:title forState:UIControlStateNormal];
-    textButton.titleLabel.font=[UIFont fontWithName:@"Helvetica-Bold" size:16.0];
-    textButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
     [textButton addTarget:self
                    action:@selector(buttonRightAction:)
          forControlEvents:UIControlEventTouchUpInside];
     return textButton;
+}
+
+- (void) setBlurTintColor:(UIColor *)blurTintColor {
+    [self.toolbar setBarTintColor:blurTintColor];
 }
 
 - (void)drawRect:(CGRect)rect {
