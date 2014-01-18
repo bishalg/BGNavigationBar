@@ -47,7 +47,7 @@
 @synthesize isNavBarToShow;
 
 - (void)bgNavigationBarButtonLocation:(NSUInteger)buttonLocation ofButtonType:(NSUInteger)buttonType {
-    DLog(@"%lu", (unsigned long)buttonLocation);
+    
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
