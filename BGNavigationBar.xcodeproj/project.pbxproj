@@ -10,10 +10,10 @@
 		052FCFD5187EF71900499880 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 052FCFD4187EF71900499880 /* back.png */; };
 		05347345188A95A4000DA173 /* ImagesUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 05347344188A95A4000DA173 /* ImagesUtil.m */; };
 		05347351188AC948000DA173 /* BGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05347348188AC948000DA173 /* BGAppDelegate.m */; };
-		05347352188AC948000DA173 /* BGConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0534734A188AC948000DA173 /* BGConstants.m */; };
 		05347355188AC948000DA173 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0534734F188AC948000DA173 /* Images.xcassets */; };
 		05347356188AC948000DA173 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05347350188AC948000DA173 /* main.m */; };
 		0534735A188AC9D4000DA173 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05347358188AC9D4000DA173 /* InfoPlist.strings */; };
+		0534735F188AD246000DA173 /* BGConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0534735E188AD246000DA173 /* BGConstants.m */; };
 		05A8E54D187E28AB002DAA7C /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8E546187E28AB002DAA7C /* UIColor+HexColor.m */; };
 		05A8E54E187E28AB002DAA7C /* UIColor+SmokeFree.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8E548187E28AB002DAA7C /* UIColor+SmokeFree.m */; };
 		05A8E54F187E28AB002DAA7C /* UIImage+MaskedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8E54A187E28AB002DAA7C /* UIImage+MaskedImage.m */; };
@@ -46,13 +46,13 @@
 		05347344188A95A4000DA173 /* ImagesUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesUtil.m; sourceTree = "<group>"; };
 		05347347188AC948000DA173 /* BGAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGAppDelegate.h; sourceTree = "<group>"; };
 		05347348188AC948000DA173 /* BGAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAppDelegate.m; sourceTree = "<group>"; };
-		05347349188AC948000DA173 /* BGConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGConstants.h; sourceTree = "<group>"; };
-		0534734A188AC948000DA173 /* BGConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGConstants.m; sourceTree = "<group>"; };
 		0534734F188AC948000DA173 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		05347350188AC948000DA173 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		05347357188AC978000DA173 /* BGNavigationBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BGNavigationBar-Prefix.pch"; path = "BGNavigationBar/BGNavigationBar-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		05347359188AC9D4000DA173 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = BGNavigationBar/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		0534735B188ACA2E000DA173 /* BGNavigationBar-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "BGNavigationBar-Info.plist"; path = "BGNavigationBar/BGNavigationBar-Info.plist"; sourceTree = SOURCE_ROOT; };
+		0534735D188AD246000DA173 /* BGConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGConstants.h; sourceTree = "<group>"; };
+		0534735E188AD246000DA173 /* BGConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGConstants.m; sourceTree = "<group>"; };
 		05A8E545187E28AB002DAA7C /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
 		05A8E546187E28AB002DAA7C /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
 		05A8E547187E28AB002DAA7C /* UIColor+SmokeFree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SmokeFree.h"; sourceTree = "<group>"; };
@@ -111,6 +111,8 @@
 		05347342188A957C000DA173 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				0534735D188AD246000DA173 /* BGConstants.h */,
+				0534735E188AD246000DA173 /* BGConstants.m */,
 				05347343188A95A4000DA173 /* ImagesUtil.h */,
 				05347344188A95A4000DA173 /* ImagesUtil.m */,
 			);
@@ -125,8 +127,6 @@
 				05347357188AC978000DA173 /* BGNavigationBar-Prefix.pch */,
 				05347347188AC948000DA173 /* BGAppDelegate.h */,
 				05347348188AC948000DA173 /* BGAppDelegate.m */,
-				05347349188AC948000DA173 /* BGConstants.h */,
-				0534734A188AC948000DA173 /* BGConstants.m */,
 				0534734F188AC948000DA173 /* Images.xcassets */,
 				05347350188AC948000DA173 /* main.m */,
 			);
@@ -332,8 +332,8 @@
 				05A8E550187E28AB002DAA7C /* UIView+position.m in Sources */,
 				05A8E54D187E28AB002DAA7C /* UIColor+HexColor.m in Sources */,
 				05347345188A95A4000DA173 /* ImagesUtil.m in Sources */,
+				0534735F188AD246000DA173 /* BGConstants.m in Sources */,
 				05347351188AC948000DA173 /* BGAppDelegate.m in Sources */,
-				05347352188AC948000DA173 /* BGConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
