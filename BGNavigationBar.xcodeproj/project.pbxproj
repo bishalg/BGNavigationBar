@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		052FCFD5187EF71900499880 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 052FCFD4187EF71900499880 /* back.png */; };
+		05347345188A95A4000DA173 /* ImagesUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 05347344188A95A4000DA173 /* ImagesUtil.m */; };
+		05347351188AC948000DA173 /* BGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05347348188AC948000DA173 /* BGAppDelegate.m */; };
+		05347352188AC948000DA173 /* BGConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0534734A188AC948000DA173 /* BGConstants.m */; };
+		05347355188AC948000DA173 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0534734F188AC948000DA173 /* Images.xcassets */; };
+		05347356188AC948000DA173 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05347350188AC948000DA173 /* main.m */; };
+		0534735A188AC9D4000DA173 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05347358188AC9D4000DA173 /* InfoPlist.strings */; };
 		05A8E54D187E28AB002DAA7C /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8E546187E28AB002DAA7C /* UIColor+HexColor.m */; };
 		05A8E54E187E28AB002DAA7C /* UIColor+SmokeFree.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8E548187E28AB002DAA7C /* UIColor+SmokeFree.m */; };
 		05A8E54F187E28AB002DAA7C /* UIImage+MaskedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8E54A187E28AB002DAA7C /* UIImage+MaskedImage.m */; };
@@ -15,10 +21,6 @@
 		05CEC678187CF4640011D318 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CEC677187CF4640011D318 /* Foundation.framework */; };
 		05CEC67A187CF4640011D318 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CEC679187CF4640011D318 /* CoreGraphics.framework */; };
 		05CEC67C187CF4640011D318 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CEC67B187CF4640011D318 /* UIKit.framework */; };
-		05CEC682187CF4640011D318 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05CEC680187CF4640011D318 /* InfoPlist.strings */; };
-		05CEC684187CF4640011D318 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEC683187CF4640011D318 /* main.m */; };
-		05CEC688187CF4640011D318 /* BGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEC687187CF4640011D318 /* BGAppDelegate.m */; };
-		05CEC68A187CF4640011D318 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05CEC689187CF4640011D318 /* Images.xcassets */; };
 		05CEC691187CF4640011D318 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CEC690187CF4640011D318 /* XCTest.framework */; };
 		05CEC692187CF4640011D318 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CEC677187CF4640011D318 /* Foundation.framework */; };
 		05CEC693187CF4640011D318 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CEC67B187CF4640011D318 /* UIKit.framework */; };
@@ -26,7 +28,6 @@
 		05CEC69D187CF4640011D318 /* BGNavigationBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEC69C187CF4640011D318 /* BGNavigationBarTests.m */; };
 		05CEC6AC187CF57C0011D318 /* BGMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEC6AB187CF57C0011D318 /* BGMainViewController.m */; };
 		05CEC6B0187CF6C10011D318 /* BGNavigationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEC6AF187CF6C10011D318 /* BGNavigationBarView.m */; };
-		05CEC6B3187CF70F0011D318 /* BGConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 05CEC6B2187CF70F0011D318 /* BGConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,17 @@
 
 /* Begin PBXFileReference section */
 		052FCFD4187EF71900499880 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		05347343188A95A4000DA173 /* ImagesUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesUtil.h; sourceTree = "<group>"; };
+		05347344188A95A4000DA173 /* ImagesUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesUtil.m; sourceTree = "<group>"; };
+		05347347188AC948000DA173 /* BGAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGAppDelegate.h; sourceTree = "<group>"; };
+		05347348188AC948000DA173 /* BGAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGAppDelegate.m; sourceTree = "<group>"; };
+		05347349188AC948000DA173 /* BGConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGConstants.h; sourceTree = "<group>"; };
+		0534734A188AC948000DA173 /* BGConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGConstants.m; sourceTree = "<group>"; };
+		0534734F188AC948000DA173 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		05347350188AC948000DA173 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		05347357188AC978000DA173 /* BGNavigationBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BGNavigationBar-Prefix.pch"; path = "BGNavigationBar/BGNavigationBar-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		05347359188AC9D4000DA173 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = BGNavigationBar/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		0534735B188ACA2E000DA173 /* BGNavigationBar-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "BGNavigationBar-Info.plist"; path = "BGNavigationBar/BGNavigationBar-Info.plist"; sourceTree = SOURCE_ROOT; };
 		05A8E545187E28AB002DAA7C /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
 		05A8E546187E28AB002DAA7C /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
 		05A8E547187E28AB002DAA7C /* UIColor+SmokeFree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SmokeFree.h"; sourceTree = "<group>"; };
@@ -53,13 +65,6 @@
 		05CEC677187CF4640011D318 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		05CEC679187CF4640011D318 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		05CEC67B187CF4640011D318 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		05CEC67F187CF4640011D318 /* BGNavigationBar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BGNavigationBar-Info.plist"; sourceTree = "<group>"; };
-		05CEC681187CF4640011D318 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		05CEC683187CF4640011D318 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		05CEC685187CF4640011D318 /* BGNavigationBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BGNavigationBar-Prefix.pch"; sourceTree = "<group>"; };
-		05CEC686187CF4640011D318 /* BGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGAppDelegate.h; sourceTree = "<group>"; };
-		05CEC687187CF4640011D318 /* BGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGAppDelegate.m; sourceTree = "<group>"; };
-		05CEC689187CF4640011D318 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		05CEC68F187CF4640011D318 /* BGNavigationBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BGNavigationBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05CEC690187CF4640011D318 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		05CEC698187CF4640011D318 /* BGNavigationBarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BGNavigationBarTests-Info.plist"; sourceTree = "<group>"; };
@@ -69,8 +74,6 @@
 		05CEC6AB187CF57C0011D318 /* BGMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGMainViewController.m; sourceTree = "<group>"; };
 		05CEC6AE187CF6C10011D318 /* BGNavigationBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGNavigationBarView.h; sourceTree = "<group>"; };
 		05CEC6AF187CF6C10011D318 /* BGNavigationBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGNavigationBarView.m; sourceTree = "<group>"; };
-		05CEC6B1187CF70F0011D318 /* BGConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGConstants.h; sourceTree = "<group>"; };
-		05CEC6B2187CF70F0011D318 /* BGConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGConstants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,31 @@
 				052FCFD4187EF71900499880 /* back.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		05347342188A957C000DA173 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				05347343188A95A4000DA173 /* ImagesUtil.h */,
+				05347344188A95A4000DA173 /* ImagesUtil.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		05347346188AC948000DA173 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0534735B188ACA2E000DA173 /* BGNavigationBar-Info.plist */,
+				05347358188AC9D4000DA173 /* InfoPlist.strings */,
+				05347357188AC978000DA173 /* BGNavigationBar-Prefix.pch */,
+				05347347188AC948000DA173 /* BGAppDelegate.h */,
+				05347348188AC948000DA173 /* BGAppDelegate.m */,
+				05347349188AC948000DA173 /* BGConstants.h */,
+				0534734A188AC948000DA173 /* BGConstants.m */,
+				0534734F188AC948000DA173 /* Images.xcassets */,
+				05347350188AC948000DA173 /* main.m */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		05A8E544187E28AB002DAA7C /* Categories */ = {
@@ -153,29 +181,14 @@
 		05CEC67D187CF4640011D318 /* BGNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
+				05347342188A957C000DA173 /* Utils */,
 				052FCFD3187EF71900499880 /* Images */,
 				05A8E544187E28AB002DAA7C /* Categories */,
 				05CEC6AD187CF6C10011D318 /* View */,
 				05CEC6A9187CF57C0011D318 /* ViewController */,
-				05CEC67E187CF4640011D318 /* Supporting Files */,
+				05347346188AC948000DA173 /* SupportingFiles */,
 			);
 			path = BGNavigationBar;
-			sourceTree = "<group>";
-		};
-		05CEC67E187CF4640011D318 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				05CEC6B1187CF70F0011D318 /* BGConstants.h */,
-				05CEC6B2187CF70F0011D318 /* BGConstants.m */,
-				05CEC686187CF4640011D318 /* BGAppDelegate.h */,
-				05CEC687187CF4640011D318 /* BGAppDelegate.m */,
-				05CEC689187CF4640011D318 /* Images.xcassets */,
-				05CEC67F187CF4640011D318 /* BGNavigationBar-Info.plist */,
-				05CEC680187CF4640011D318 /* InfoPlist.strings */,
-				05CEC683187CF4640011D318 /* main.m */,
-				05CEC685187CF4640011D318 /* BGNavigationBar-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		05CEC696187CF4640011D318 /* BGNavigationBarTests */ = {
@@ -290,9 +303,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05CEC682187CF4640011D318 /* InfoPlist.strings in Resources */,
-				05CEC68A187CF4640011D318 /* Images.xcassets in Resources */,
 				052FCFD5187EF71900499880 /* back.png in Resources */,
+				0534735A188AC9D4000DA173 /* InfoPlist.strings in Resources */,
+				05347355188AC948000DA173 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,15 +324,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05347356188AC948000DA173 /* main.m in Sources */,
 				05CEC6AC187CF57C0011D318 /* BGMainViewController.m in Sources */,
 				05CEC6B0187CF6C10011D318 /* BGNavigationBarView.m in Sources */,
-				05CEC684187CF4640011D318 /* main.m in Sources */,
 				05A8E54E187E28AB002DAA7C /* UIColor+SmokeFree.m in Sources */,
 				05A8E54F187E28AB002DAA7C /* UIImage+MaskedImage.m in Sources */,
 				05A8E550187E28AB002DAA7C /* UIView+position.m in Sources */,
-				05CEC6B3187CF70F0011D318 /* BGConstants.m in Sources */,
-				05CEC688187CF4640011D318 /* BGAppDelegate.m in Sources */,
 				05A8E54D187E28AB002DAA7C /* UIColor+HexColor.m in Sources */,
+				05347345188A95A4000DA173 /* ImagesUtil.m in Sources */,
+				05347351188AC948000DA173 /* BGAppDelegate.m in Sources */,
+				05347352188AC948000DA173 /* BGConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,10 +356,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		05CEC680187CF4640011D318 /* InfoPlist.strings */ = {
+		05347358188AC9D4000DA173 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				05CEC681187CF4640011D318 /* en */,
+				05347359188AC9D4000DA173 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
