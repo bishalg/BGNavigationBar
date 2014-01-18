@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.platform     = :ios, '5.0'
   s.ios.deployment_target = '5.0'
-  s.source       = { :git => "https://github.com/bishalg/BGNavigationBar.git", :tag => "0.1" }
+  s.source       = { :git => "https://github.com/bishalg/BGNavigationBar.git", :tag => "0.2" }
   s.source_files  = 'BGNavigationBar', 'BGNavigationBar/**/*.{h,m}'
   s.exclude_files = 'BGNavigationBar/SupportingFiles'
   s.requires_arc = true
