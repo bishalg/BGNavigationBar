@@ -14,6 +14,11 @@
 		05347356188AC948000DA173 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05347350188AC948000DA173 /* main.m */; };
 		0534735A188AC9D4000DA173 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05347358188AC9D4000DA173 /* InfoPlist.strings */; };
 		0534735F188AD246000DA173 /* BGConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0534735E188AD246000DA173 /* BGConstants.m */; };
+		05913D84188B95D800D4B58F /* AUIAnimatableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05913D7B188B95D800D4B58F /* AUIAnimatableLabel.m */; };
+		05913D85188B95D800D4B58F /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 05913D7D188B95D800D4B58F /* GTMNSString+HTML.m */; };
+		05913D86188B95D800D4B58F /* NSDictionary+ObjectForKeyOrNil.m in Sources */ = {isa = PBXBuildFile; fileRef = 05913D7F188B95D800D4B58F /* NSDictionary+ObjectForKeyOrNil.m */; };
+		05913D87188B95D800D4B58F /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 05913D81188B95D800D4B58F /* NSString+HTML.m */; };
+		05913D88188B95D800D4B58F /* NSString+NepaliNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 05913D83188B95D800D4B58F /* NSString+NepaliNumber.m */; };
 		05A8E54D187E28AB002DAA7C /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8E546187E28AB002DAA7C /* UIColor+HexColor.m */; };
 		05A8E54E187E28AB002DAA7C /* UIColor+SmokeFree.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8E548187E28AB002DAA7C /* UIColor+SmokeFree.m */; };
 		05A8E54F187E28AB002DAA7C /* UIImage+MaskedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A8E54A187E28AB002DAA7C /* UIImage+MaskedImage.m */; };
@@ -53,6 +58,16 @@
 		0534735B188ACA2E000DA173 /* BGNavigationBar-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "BGNavigationBar-Info.plist"; path = "BGNavigationBar/BGNavigationBar-Info.plist"; sourceTree = SOURCE_ROOT; };
 		0534735D188AD246000DA173 /* BGConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGConstants.h; sourceTree = "<group>"; };
 		0534735E188AD246000DA173 /* BGConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGConstants.m; sourceTree = "<group>"; };
+		05913D7A188B95D800D4B58F /* AUIAnimatableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIAnimatableLabel.h; sourceTree = "<group>"; };
+		05913D7B188B95D800D4B58F /* AUIAnimatableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIAnimatableLabel.m; sourceTree = "<group>"; };
+		05913D7C188B95D800D4B58F /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		05913D7D188B95D800D4B58F /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		05913D7E188B95D800D4B58F /* NSDictionary+ObjectForKeyOrNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ObjectForKeyOrNil.h"; sourceTree = "<group>"; };
+		05913D7F188B95D800D4B58F /* NSDictionary+ObjectForKeyOrNil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ObjectForKeyOrNil.m"; sourceTree = "<group>"; };
+		05913D80188B95D800D4B58F /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		05913D81188B95D800D4B58F /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
+		05913D82188B95D800D4B58F /* NSString+NepaliNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NepaliNumber.h"; sourceTree = "<group>"; };
+		05913D83188B95D800D4B58F /* NSString+NepaliNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NepaliNumber.m"; sourceTree = "<group>"; };
 		05A8E545187E28AB002DAA7C /* UIColor+HexColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColor.h"; sourceTree = "<group>"; };
 		05A8E546187E28AB002DAA7C /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
 		05A8E547187E28AB002DAA7C /* UIColor+SmokeFree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SmokeFree.h"; sourceTree = "<group>"; };
@@ -136,6 +151,16 @@
 		05A8E544187E28AB002DAA7C /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				05913D7A188B95D800D4B58F /* AUIAnimatableLabel.h */,
+				05913D7B188B95D800D4B58F /* AUIAnimatableLabel.m */,
+				05913D7C188B95D800D4B58F /* GTMNSString+HTML.h */,
+				05913D7D188B95D800D4B58F /* GTMNSString+HTML.m */,
+				05913D7E188B95D800D4B58F /* NSDictionary+ObjectForKeyOrNil.h */,
+				05913D7F188B95D800D4B58F /* NSDictionary+ObjectForKeyOrNil.m */,
+				05913D80188B95D800D4B58F /* NSString+HTML.h */,
+				05913D81188B95D800D4B58F /* NSString+HTML.m */,
+				05913D82188B95D800D4B58F /* NSString+NepaliNumber.h */,
+				05913D83188B95D800D4B58F /* NSString+NepaliNumber.m */,
 				05A8E545187E28AB002DAA7C /* UIColor+HexColor.h */,
 				05A8E546187E28AB002DAA7C /* UIColor+HexColor.m */,
 				05A8E547187E28AB002DAA7C /* UIColor+SmokeFree.h */,
@@ -327,12 +352,17 @@
 				05347356188AC948000DA173 /* main.m in Sources */,
 				05CEC6AC187CF57C0011D318 /* BGMainViewController.m in Sources */,
 				05CEC6B0187CF6C10011D318 /* BGNavigationBarView.m in Sources */,
+				05913D86188B95D800D4B58F /* NSDictionary+ObjectForKeyOrNil.m in Sources */,
 				05A8E54E187E28AB002DAA7C /* UIColor+SmokeFree.m in Sources */,
 				05A8E54F187E28AB002DAA7C /* UIImage+MaskedImage.m in Sources */,
+				05913D85188B95D800D4B58F /* GTMNSString+HTML.m in Sources */,
 				05A8E550187E28AB002DAA7C /* UIView+position.m in Sources */,
 				05A8E54D187E28AB002DAA7C /* UIColor+HexColor.m in Sources */,
 				05347345188A95A4000DA173 /* ImagesUtil.m in Sources */,
+				05913D87188B95D800D4B58F /* NSString+HTML.m in Sources */,
+				05913D88188B95D800D4B58F /* NSString+NepaliNumber.m in Sources */,
 				0534735F188AD246000DA173 /* BGConstants.m in Sources */,
+				05913D84188B95D800D4B58F /* AUIAnimatableLabel.m in Sources */,
 				05347351188AC948000DA173 /* BGAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
