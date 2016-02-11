@@ -3,9 +3,9 @@ BGNavigationBar
 
 Custom Navigation Bar
 
-Version  - ![Cocoapods](https://cocoapod-badges.herokuapp.com/v/BGNavigationBar/badge.png)
+Version  - ![CocoaPods](https://cocoapod-badges.herokuapp.com/v/BGNavigationBar/badge.png)
 
-Platform - ![Cocoapods](https://cocoapod-badges.herokuapp.com/p/BGNavigationBar/badge.png)
+Platform - ![CocoaPods](https://cocoapod-badges.herokuapp.com/p/BGNavigationBar/badge.png)
 
 ## Install 
 
